@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "M4DH",
+  "short_name": "M4DH",
+  "description": "M4DH",
+  "version": "1.0.0",
+  "background": {
+    "scripts": [
+      "build/background-bundle.js"
+    ]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": false
+  },
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": [
+      "build/content-bundle.js"
+    ],
+    "run_at": "document_end"
+  }],
+  "web_accessible_resources": [
+    "build/*"
+  ],
+  "permissions": [
+    "tabs",
+    "cookies",
+    "storage",
+    "webRequest",
+    "activeTab",
+    "<all_urls>"
+  ]
+}
