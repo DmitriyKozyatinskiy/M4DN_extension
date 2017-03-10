@@ -1,7 +1,7 @@
 {
-  "name": "M4DH",
+  "name": "Sneekr",
   "version": "1.0.0",
-  "description": "M4DH",
+  "description": "Sneekr",
   "main": "build.js",
   "scripts": {
     "build-production": "node compile.js"

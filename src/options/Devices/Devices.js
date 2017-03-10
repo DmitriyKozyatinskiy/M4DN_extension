@@ -69,6 +69,8 @@ export default class Devices {
           id: deviceID
         }
       }, () => {
+        Alert.hide();
+        Alert.showSuccess('Device is saved');
         resolve();
       });
     });
@@ -95,7 +97,6 @@ export default class Devices {
       chrome.runtime.sendMessage({
         type: 'getActiveDeviceID'
       }, activeDeviceID => {
-        console.log('ACTIVE: ', activeDeviceID);
         if (activeDeviceID) {
           this._activeDeviceID = activeDeviceID;
           resolve(activeDeviceID);
@@ -121,9 +122,7 @@ export default class Devices {
         }
 
         this._devices.forEach(device => {
-          console.log('Device: ', device);
           if (device.id == activeDeviceID) {
-            console.log('active');
             device.isActive = true;
           }
 

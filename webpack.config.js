@@ -36,8 +36,6 @@ module.exports = {
   },
   entry: {
     background: "./src/background/background.js",
-    popup: "./src/popup/popup.js",
-    content: "./src/content/content.js",
     options: "./src/options/options.js"
     //bootstrap: 'bootstrap-loader',
   },

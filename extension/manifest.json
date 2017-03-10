@@ -1,39 +1,31 @@
 {
   "manifest_version": 2,
-  "name": "M4DH",
-  "short_name": "M4DH",
-  "description": "M4DH",
+  "name": "Sneekr",
+  "short_name": "Sneekr",
+  "description": "Sneekr",
   "version": "1.0.0",
   "background": {
     "scripts": [
       "build/background-bundle.js"
     ]
   },
-  "browser_action": {
-    "default_popup": "popup.html"
-  },
   "options_ui": {
     "page": "options.html",
     "chrome_style": false
   },
-  "content_scripts": [{
-    "matches": [
-      "<all_urls>"
-    ],
-    "js": [
-      "build/content-bundle.js"
-    ],
-    "run_at": "document_end"
-  }],
   "web_accessible_resources": [
     "build/*"
   ],
   "permissions": [
     "tabs",
-    "cookies",
     "storage",
     "webRequest",
     "activeTab",
     "<all_urls>"
-  ]
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
 }

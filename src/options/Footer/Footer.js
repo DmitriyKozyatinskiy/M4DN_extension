@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import Mustache from 'mustache';
+import Alert from './../Alert/Alert';
 import template from './Footer.html';
 import './Footer.scss';
 
@@ -28,9 +29,10 @@ export default class Footer {
 
 
   logout(event) {
-    this.hide();
     return new Promise((resolve, reject) => {
       event.preventDefault();
+      Alert.hide();
+      this.hide();
       chrome.runtime.sendMessage({
         type: 'logout'
       }, () => {
