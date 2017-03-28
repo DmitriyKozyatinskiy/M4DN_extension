@@ -3,3 +3,5 @@
 extension/build
 node_modules
 extension.crx
+extension.zip
+extension.rar

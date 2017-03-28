@@ -1,6 +1,6 @@
 import 'whatwg-fetch';
 
-// const API_URL = 'http://sneekr.herokuapp.com/api/v1';
+// const API_URL = 'https://sneekr.herokuapp.com/api/v1';
 const API_URL = 'http://127.0.0.1:8000/api/v1';
 
 export default class API {

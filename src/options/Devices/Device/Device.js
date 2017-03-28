@@ -20,6 +20,10 @@ export default class Device {
     const $template = $(Mustache.render(template, this._data));
     this._$node = $template;
     $template.appendTo('#js-devices');
+    if (this._data.isActive) {
+      $template.find('.js-device-selector').prop('checked', true);
+    }
+    
     return this;
   }
 

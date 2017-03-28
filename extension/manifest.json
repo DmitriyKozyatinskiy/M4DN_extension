@@ -2,7 +2,8 @@
   "manifest_version": 2,
   "name": "Sneekr",
   "short_name": "Sneekr",
-  "description": "Sneekr",
+  "description": "Sneekr extension collects your browser history and stores it in our dashboard",
+  "homepage_url": "https://sneekr.herokuapp.com/",
   "version": "1.0.0",
   "background": {
     "scripts": [

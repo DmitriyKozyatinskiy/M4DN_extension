@@ -1,3 +1,5 @@
+// webpack -p --define process.env.NODE_ENV="\"production\"" --progress --colors
+
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
