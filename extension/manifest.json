@@ -4,7 +4,7 @@
   "short_name": "Sneekr",
   "description": "Sneekr extension collects your browser history and stores it in our dashboard",
   "homepage_url": "https://sneekr.herokuapp.com/",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "background": {
     "scripts": [
       "build/background-bundle.js"
@@ -25,8 +25,8 @@
     "<all_urls>"
   ],
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
   }
 }
